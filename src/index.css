@@ -1,0 +1,74 @@
+html ,body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*Header(Navbar?*/
+
+.nav--header{
+  max-width: 100%;
+  height: 50px;
+  background: #FFF7ED;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+header > a{
+  text-decoration: none;
+}
+
+.nav--logo{
+  font-style: normal;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 40px;
+  color: #000000;
+  margin-right: auto;
+}
+
+.nav--links{
+   padding-right: 30px;
+}
+
+.nav--links > a{
+  text-decoration: none;
+  padding: 0px 10px;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4D4D4D;
+}
+
+/*Footer*/
+
+.home--footer{
+  width: 100%;
+  height: 50px;
+  background-color: #252525;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home--footer > p{
+  color: #AAAAAA;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
