@@ -99,6 +99,7 @@ footer{
   color: #4D4D4D;
   background: #161616;
   height: 90px;
+  margin: 0;
 }
 
 /*About page*/
@@ -127,11 +128,12 @@ footer{
   width: 500px;
   height: 200px;
   background: #FF8C38;
-  margin: 0px 100px 20px ;
+  margin-bottom: 15px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-left: 20px;
 }
 
 .about--cta > h2{
