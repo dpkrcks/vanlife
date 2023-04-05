@@ -5,7 +5,11 @@ import bgimg from "../../assets/images/image 54.png";
 export default function About() {
   return (
     <div className="about--container">
-      <img src={bgimg} className="about--hero--image" />
+      <img
+        src={bgimg}
+        className="about--hero--image"
+        alt="a man is sitting on a van"
+      />
       <div className="about--content">
         <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
         <p>
