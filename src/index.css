@@ -1,91 +1,160 @@
-html ,body {
+*{
+  box-sizing: border-box;
+}
+
+html,body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  max-width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  padding: 0;
+  background-color: #fff7ed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar{
+  display: none;
 }
 
-/*Header(Navbar?*/
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
-.nav--header{
-  max-width: 100%;
-  height: 50px;
-  background: #FFF7ED;
+/*header component*/
+
+header{
+  height: 110px;
   display: flex;
   align-items: center;
-  padding: 40px;
-}
-
-header > a{
-  text-decoration: none;
+  padding: 0px 25px;
 }
 
 .nav--logo{
-  font-style: normal;
-  font-size: 35px;
-  font-weight: 900;
-  line-height: 40px;
-  color: #000000;
+  color: black;
   margin-right: auto;
+  font-weight: 900;
+  font-size: 25px;
 }
 
-.nav--links{
-   padding-right: 30px;
-}
-
-.nav--links > a{
+header > a, nav > a{
   text-decoration: none;
-  padding: 0px 10px;
-  font-style: normal;
-  font-size: 20px;
-  font-weight: 600;
   color: #4D4D4D;
+  font-weight: 600;
+  padding: 5px 20px;
 }
 
-/*Footer*/
 
-.home--footer{
-  width: 100%;
-  height: 50px;
-  background-color: #252525;
-  position: fixed;
-  bottom: 0;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header > a:hover , nav > a:hover{
+  color: #161616;
+  text-decoration: underline;
 }
 
-.home--footer > p{
-  color: #AAAAAA;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 25px;
-}
-
-/* home component*/
+/*home page*/
 
 .home--main{
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,0.46), rgba(0,0,0,0.46)),url("./assets/images/image\ 53.png") no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 55px 23px;
+  min-height: 450px;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0,0,0,0.46), rgba(0,0,0,0.46)),url("./assets/images/image\ 53.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.home--main > h1{
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 42px;
+}
+
+.home--main > p{
+  line-height: 24px;
+  font-size: 1.2rem;
+}
+
+.home--main > a{
+  text-decoration: none;
+  background: #FF8C38;
+  height: 50px;
+  width: 400px;
+  border-radius: 5px;
   color: #FFFFFF;
-  padding: 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 70px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.home--main > a:hover{
+  transform: translate(1px,1px);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4D4D4D;
+  background: #161616;
+  height: 90px;
+}
+
+/*About page*/
+
+.about--hero--image{
+  width: 100%;
+}
+
+.about--content{
+  padding: 20px;
+  margin-bottom: 35px;
+  color: #4D4D4D;
+}
+
+.about--content > h1{
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 25px;
+}
+
+.about--content > p{
+  line-height: 22px;
+}
+
+.about--cta{
+  width: 500px;
+  height: 200px;
+  background: #FF8C38;
+  margin: 0px 100px 20px ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.about--cta > h2{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.about--cta > a{
+  text-decoration: none;
+  width: 180px;
+  height: 50px;
+  background: #161616;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.about--cta > a:hover{
+  transform: translate(1px 1px);
 }
