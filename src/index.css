@@ -106,10 +106,11 @@ footer{
 
 .about--hero--image{
   width: 100%;
+  height: 400px;
 }
 
 .about--content{
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 35px;
   color: #4D4D4D;
 }
@@ -159,4 +160,91 @@ footer{
 
 .about--cta > a:hover{
   transform: translate(1px 1px);
+}
+
+/* van page*/
+.van--elements--container{
+  padding: 20px 0px;
+}
+.van--elements{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 34px;
+}
+
+.van--img{
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.van--details{
+  display: flex;
+  padding-bottom: 0px;
+}
+
+.van--details p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.van--details span {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.van--details > h3{
+  margin-right: auto;
+}
+
+.van--type{
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFEAD0;
+  color: #4d4d4d;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*
+.van--type:hover {
+  color: #FFEAD0;
+}
+
+.van--type:focus {
+  outline: none;
+}
+
+.van--type.selected {
+  color: #FFEAD0;
+}
+
+.van--type.simple:hover, .van-type.simple.selected {
+  background-color: #E17654;
+}
+
+.van--type.rugged:hover, .van-type.rugged.selected {
+  background-color: #115E59;
+}
+
+.van--type.luxury:hover, .van-type.luxury.selected {
+  background-color: #161616;
+}  */
+
+.van--type.simple{
+  background-color: #E17654;
+  color: #FFEAD0;
+}
+
+.van--type.rugged{
+  background-color: #115E59;
+  color: #FFEAD0;
+}
+
+.van--type.luxury{
+  background-color: #161616;
+  color: #FFEAD0;
 }

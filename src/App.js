@@ -6,6 +6,8 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Vans from "./components/pages/Vans";
 
+import "./Server";
+
 export default function App() {
   return (
     <BrowserRouter>
